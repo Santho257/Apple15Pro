@@ -1,0 +1,294 @@
+.highlights-content {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    background: #101010;
+}
+.all-access-pass__container {
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.aap-highlights {
+    z-index: 1;
+}
+
+.all-access-pass {
+    align-items: center;
+    bottom: 30px;
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    position: sticky;
+    will-change: transform;
+}
+
+.aap-highlights .all-access-pass__background {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    min-height: 56px;
+    pointer-events: auto;
+    position: relative;
+}
+
+.all-access-pass__background {
+    backdrop-filter: blur(7px);
+    background-color: rgb(66 66 69 /70%);
+    border-radius: 32px;
+    box-shadow: inset 0 0 1px rgb(232, 232, 237 / 11%);
+    color: rgb(245, 245, 247);
+    display: flex;
+    will-change: transform;
+    z-index: 1;
+    transition: linear 250ms background-color;
+}
+
+.aap-highlights .all-access-pass__background .dotnav {
+    padding: 0 16px;
+}
+
+.aap-highlights .all-access-pass__background .dotnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+.dotnav {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.all-access-pass:before {
+    --bg-color: #0071e3;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transform: scale(var(--bg-scale));
+    width: 100%;
+    will-change: transform;
+}
+
+.dotnav-items {
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+    padding-inline-start: 0;
+    justify-content: center;
+}
+
+.aap-highlights .all-access-pass__background .dotnav .dotnav-items .dotnav-item {
+    padding: 0 8px;
+    width: auto;
+}
+
+.dotnav-item,
+.dotnav-link {
+    height: 8px;
+}
+
+.dotnav-item {
+    list-style: none;
+    margin-block: 0;
+    position: relative;
+}
+
+.section-highlights [data-component-list*=HighlightsGallery] .dotnav-item.current,
+.dotnav-link.current {
+    pointer-events: none;
+}
+
+html.enhanced .aap-highlights .play-pause-button-wrapper {
+    margin-inline-start: 0;
+}
+
+.aap-highlights .play-pause-button-wrapper {
+    height: 56px;
+    width: 56px;
+}
+
+.aap-highlights .play-pause-button-wrapper .play-pause-button {
+    height: 100%;
+    width: 100%;
+    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    transition: background-color 100ms linear;
+}
+
+button {
+    background: none;
+    border: 0;
+    box-sizing: initial;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    line-height: inherit;
+    overflow: visible;
+    vertical-align: inherit;
+}
+
+.aap-highlights .play-pause-button-wrapper .play-pause-button .svg-icon {
+    height: 100%;
+    width: 100%;
+    display: none;
+    fill: #f5f5f7;
+    transition: fill linear 250ms;
+}
+
+.aap-highlights .all-access-pass__background .dotnav .dotnav-items .dotnav-item .dotnav-link {
+    min-width: 8px;
+    transition: min-width cubic-bezier(0.33, 0, 0.67, 1) 400ms, background-color linear 250ms;
+}
+
+.aap-highlights .all-access-pass__background .dotnav .dotnav-items .dotnav-item .dotnav-link {
+    border-radius: 10px;
+    background-color: rgb(245, 245, 247/80%);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dotnav-link {
+    top: 0;
+    left: 0;
+    outline: none;
+    position: absolute;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.36);
+}
+
+.dotnav-item,
+.dotnav-link {
+    width: 8px;
+    height: 8px;
+}
+
+.aap-base,
+.aap-base__icon {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.aap-base {
+    border-radius: 32px;
+    justify-content: space-between;
+    min-height: 56px;
+    overflow: hidden;
+    pointer-events: auto;
+    position: relative;
+    width: 100%;
+}
+
+.aap-base__text {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600px;
+    letter-spacing: -0.01em;
+    line-height: 1.2353em;
+    margin-inline-start: 24px;
+    margin-inline-end: 62px;
+    max-width: 30em;
+    padding: 15px 0 16px;
+    text-align: left;
+    will-change: opacity;
+}
+
+.aap-base__icon {
+    background-color: #0071e3;
+    border-radius: 50px;
+    height: 36px;
+    justify-content: center;
+    margin-inline-end: 10px;
+    padding: 9px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    will-change: transform;
+}
+
+.aap-base__icon svg {
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    opacity: .8;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: #fff;
+}
+
+.aap-base,
+.aap-base__icon {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+}
+
+a {
+    color: rgb(0, 102, 204);
+    letter-spacing: inherit;
+}
+
+.aap-highlights .all-access-pass__background .dotnav .dotnav-items .dotnav-item .dotnav-link.current {
+    min-width: 48px;
+    background-color: rgb(245, 245, 247 / 80%);
+}
+
+.aap-highlights .all-access-pass__background .dotnav .dotnav-items .dotnav-item .dotnav-link.current {
+    overflow: hidden;
+    cursor: default;
+}
+
+.visuallyhidden {
+    display: none;
+}
+
+
+.aap-highlights .play-pause-button-wrapper .play-pause-button .svg-icon {
+    height: 100%;
+    width: 100%;
+    display: none;
+    fill: #f5f5f7;
+    transition: fill linear 500ms;
+}
+
+.paused .play-pause-button .svg-icon.play-icon {
+    display: block;
+}
+
+.playing .play-pause-button .svg-icon.pause-icon {
+    display: block;
+}
+.ended .play-pause-button .svg-icon.replay-icon {
+    display: block;
+}
+.header-text-anim{
+    transform: 'translateY(25px)';
+    opacity: 0;
+}
